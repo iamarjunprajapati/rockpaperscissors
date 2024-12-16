@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body>
+
+    <div class="w-full h-[100vh] bg-[rgb(247,247,247)] flex items-center justify-center">
+        <div class="sm:w-[40%] w-full flex flex-col items-center justify-center bg-[#fff] p-5 rounded shadow-xl">
+            <h1 class="font-bold text-4xl mb-3">Rock Paper Scissors Game</h1>
+            <h2 class="font-bold text-2xl mb-3">Choose your move:</h2>
+            <div class="flex gap-5 mb-5">
+                <button id="rock" class="text-4xl rounded p-3 bg-[red]" value="rock">👊</button>
+                <button id="paper" class="text-4xl rounded p-3 bg-[skyblue]" value="paper">🖐</button>
+                <button id="scissors" class="text-4xl rounded p-3 bg-[green]" value="scissors">✌</button>
+            </div>
+            <h2 class="font-semibold text-2xl mb-3" id="result">You Win! Scissors beats paper.</h2>
+            <h2 class="font-semibold text-2xl mb-3">Your score: <span class="text-[skyblue]" id="userScore">0</span> Computer score :
+                <span class="text-[red]" id="computerScore">0</span></h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
